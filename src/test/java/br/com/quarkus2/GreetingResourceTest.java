@@ -1,5 +1,5 @@
 package br.com.quarkus2;
-/*
+
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
@@ -18,4 +18,4 @@ public class GreetingResourceTest {
              .body(is("Hello RESTEasy"));
     }
 
-}*/
+}

@@ -1,0 +1,28 @@
+mvn io.quarkus:quarkus-maven-plugin:2.1.0.Final:create -DprojectGroupId=org.acme -DprojectArtifactId=quarkus -DclassName="br.com.quarkus.resource" -Dpath="/aleluia"
+
+-----------------------------------
+<dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm-panache</artifactId>
+</dependency>
+
+<dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-jsonb</artifactId>
+</dependency>
+ 
+// comando para iniciar o quarkus pelo terminal
+mvn compile quarkus:dev
+mvn quarkus:dev
+//comando para listar as extençoes
+mvn quarkus:list-extensions
+//extensão quarkus do mysql
+quarkus-jdbc-mysql
+//comando para adicionar as extenções
+mvn quarkus:add-extension -Dextensions="quarkus-resteasy-jsonb"
+
+-----------------comando para iniciar a imagem nativa------------------------------
+  C:\Users\ernil.LAPTOP-FID40H3U\eclipse-workspace\quarkus\target> .\quarkus-1.0.0-SNAPSHOT-runner.exe
+
+-----------------------Metodo para transformar em binarios-------------------------------------------
+cmd /c 'call "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Auxiliary\Build\vcvars64.bat" && mvn package -Pnative'
